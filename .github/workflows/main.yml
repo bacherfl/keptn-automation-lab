@@ -31,7 +31,6 @@ jobs:
           DTAPIToken: ${{ secrets.DT_API_TOKEN }}
           DTPaasToken: ${{ secrets.DT_PAAS_TOKEN }}
 
-
       # The Keptn API credentials can then be used in the next action, e.g.:
       - name: Trigger delivery
         id: trigger-delivery
