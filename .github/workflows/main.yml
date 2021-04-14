@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup Keptn
         id: setup-keptn
-        uses: keptn/gh-action-setup-keptn@patch/utils-file-path
+        uses: keptn/gh-action-setup-keptn@main
         with:
           KeptnVersion: '0.8.1'
           GKEClusterVersion: '1.18'
