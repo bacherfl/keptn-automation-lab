@@ -24,7 +24,7 @@ jobs:
           GKEClusterName: 'keptn-meta-test'
 
       - name: Setup DT Monitoring
-        id: setup-keptn
+        id: setup-dt-monitoring
         uses: keptn-contrib/gh-action-setup-dynatrace-monitoring@feature/implement-action
         with:
           DTTenant: ${{ secrets.DT_TENANT }}
