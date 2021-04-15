@@ -49,7 +49,7 @@ jobs:
                   }
                 },
                 "deployment": {
-                  "deploymentURIsLocal": null,
+                  "deploymentURIsLocal": ["http://api-gateway-nginx.hardening"],
                   "deploymentstrategy": "direct"
                 },
                 "message": "",
