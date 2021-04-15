@@ -31,7 +31,10 @@ jobs:
           DTAPIToken: ${{ secrets.DT_API_TOKEN }}
           DTPaasToken: ${{ secrets.DT_PAAS_TOKEN }}
 
-      # The Keptn API credentials can then be used in the next action, e.g.:
+      - name: Update shipyard to include evaluation in hardening
+        id: update-shipyard
+        run: keptn add-resource --project=keptn --resource=./assets/shipyard.yaml
+
       - name: Trigger delivery
         id: trigger-delivery
         uses: keptn/gh-action-send-event@main
