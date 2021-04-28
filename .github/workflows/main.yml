@@ -25,7 +25,7 @@ jobs:
 
       - name: Setup DT Monitoring
         id: setup-dt-monitoring
-        uses: keptn-contrib/gh-action-setup-dynatrace-monitoring@main
+        uses: keptn-contrib/gh-action-setup-dynatrace-monitoring@dt-op-chacksum
         with:
           DTTenant: ${{ secrets.DT_TENANT }}
           DTAPIToken: ${{ secrets.DT_API_TOKEN }}
